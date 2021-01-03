@@ -1,6 +1,7 @@
 .reviews {
   &__testimonials {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -9,6 +10,7 @@
     margin-bottom: 2rem;
     border-radius: 0.8rem;
     background-color: var(--p-very-dark-magenta);
+    width: 85vw;
   }
 
   &__cardWrapper {
