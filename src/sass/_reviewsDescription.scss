@@ -20,10 +20,20 @@
     align-items: center;
     text-align: center;
     margin-bottom: 3.1rem;
+
+    @include rwd(large) {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      text-align: start;
+    }
   }
 
   &__text {
     margin-bottom: 4rem;
+
+    @include rwd(large) {
+      width: 40%;
+    }
   }
 
   &__title {
@@ -31,11 +41,16 @@
     font-size: 3.1rem;
     font-weight: 700;
     padding: 2rem 3.2rem;
+
+    @include rwd(large) {
+      padding: 0 0 1rem 0;
+      font-size: 4.6rem;
+    }
   }
 
   &__paragraph {
     color: var(--s-dark-grayish-magenta);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2.2rem;
   }
 
@@ -45,10 +60,35 @@
     padding: 1.5rem 5.6rem;
     margin-bottom: 1.8rem;
     border-radius: 0.8rem;
+
+    @include rwd(large) {
+      width: 44.1rem;
+      height: 5.6rem;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+  }
+
+  &__rate--second {
+    @include rwd(large) {
+      margin-left: 5rem;
+    }
+  }
+
+  &__rate--third {
+    @include rwd(large) {
+      margin-left: 10rem;
+    }
   }
 
   &__rateStars {
     margin-bottom: 1rem;
+
+    @include rwd(large) {
+      margin-bottom: 0;
+      padding: 0 3rem;
+    }
   }
 
   &__rateImg {
