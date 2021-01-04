@@ -10,10 +10,6 @@
   }
 }
 
-.fadeInDown {
-  animation: fadeInDown;
-}
-
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -26,10 +22,6 @@
   }
 }
 
-.fadeInRight {
-  animation: fadeInRight;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -40,8 +32,4 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-}
-
-.fadeInUp {
-  animation: fadeInUp;
 }
