@@ -6,12 +6,30 @@
   align-items: center;
   background: {
     image: url(../imges/bg-pattern-top-mobile.svg);
-    repeat: no-repeat;
+    // url(../imges/bg-pattern-bottom-mobile.svg);
+    repeat: no-repeat, no-repeat;
+  }
+
+  @include rwd(large) {
+    background: {
+      image: url(../imges/bg-pattern-top-desktop.svg),
+        url(../imges/bg-pattern-bottom-desktop.svg);
+      repeat: no-repeat, no-repeat;
+      position: 15% 0%, 60% 100%;
+    }
   }
 }
 
 .reviews {
   margin: 7rem 2.9rem 10rem;
+
+  @include rwd(large) {
+    width: 90%;
+  }
+
+  @include rwd(xxlarge) {
+    max-width: 112.4rem;
+  }
 
   &__description {
     display: flex;
