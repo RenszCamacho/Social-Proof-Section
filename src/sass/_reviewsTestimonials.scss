@@ -26,20 +26,22 @@
   }
 
   &__cards--one {
-    animation: fadeInUp 1s;
+    @include rwd(large) {
+      animation: fadeInUp 1s;
+    }
   }
 
   &__cards--two {
-    animation: fadeInUp 1.5s;
     @include rwd(large) {
       margin-top: 3rem;
+      animation: fadeInUp 1.5s;
     }
   }
 
   &__cards--three {
-    animation: fadeInUp 2s;
     @include rwd(large) {
       margin-top: 6rem;
+      animation: fadeInUp 2s;
     }
   }
 
