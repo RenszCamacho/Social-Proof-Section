@@ -23,7 +23,7 @@
 
     @include rwd(large) {
       flex-wrap: nowrap;
-      justify-content: space-around;
+      justify-content: space-between;
       text-align: start;
     }
   }

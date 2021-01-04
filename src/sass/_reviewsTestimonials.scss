@@ -3,6 +3,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include rwd(large) {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
   }
 
   &__cards {
@@ -11,6 +17,24 @@
     border-radius: 0.8rem;
     background-color: var(--p-very-dark-magenta);
     width: 85vw;
+
+    @include rwd(large) {
+      width: 32%;
+      height: 25.8rem;
+      margin: 0;
+    }
+  }
+
+  &__cards--two {
+    @include rwd(large) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__cards--three {
+    @include rwd(large) {
+      margin-top: 6rem;
+    }
   }
 
   &__cardWrapper {
