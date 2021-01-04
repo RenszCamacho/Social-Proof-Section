@@ -25,13 +25,19 @@
     }
   }
 
+  &__cards--one {
+    animation: fadeInUp 1s;
+  }
+
   &__cards--two {
+    animation: fadeInUp 1.5s;
     @include rwd(large) {
       margin-top: 3rem;
     }
   }
 
   &__cards--three {
+    animation: fadeInUp 2s;
     @include rwd(large) {
       margin-top: 6rem;
     }

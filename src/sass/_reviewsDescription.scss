@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +51,7 @@
 
   &__text {
     margin-bottom: 4rem;
+    animation: fadeInDown 1s;
 
     @include rwd(large) {
       width: 40%;
@@ -94,13 +96,21 @@
     }
   }
 
+  &__rate--first {
+    animation: fadeInRight 1s;
+  }
+
   &__rate--second {
+    animation: fadeInRight 1.5s;
+
     @include rwd(large) {
       margin-left: 5rem;
     }
   }
 
   &__rate--third {
+    animation: fadeInRight 2s;
+
     @include rwd(large) {
       margin-left: 10rem;
     }
