@@ -25,6 +25,7 @@
 
   @include rwd(large) {
     width: 90%;
+    margin: 7rem 2.9rem;
   }
 
   @include rwd(xxlarge) {
@@ -43,6 +44,7 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       text-align: start;
+      margin-bottom: 0;
     }
   }
 
@@ -70,6 +72,10 @@
     color: var(--s-dark-grayish-magenta);
     font-size: 1.4rem;
     line-height: 2.2rem;
+
+    @include rwd(xxlarge) {
+      margin-right: 0.3rem;
+    }
   }
 
   &__rate {
