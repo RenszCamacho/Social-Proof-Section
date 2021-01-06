@@ -12,6 +12,7 @@
   }
 
   @include rwd(large) {
+    height: 100vh;
     background: {
       image: url(../imges/bg-pattern-top-desktop.svg),
         url(../imges/bg-pattern-bottom-desktop.svg);
