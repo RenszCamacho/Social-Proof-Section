@@ -4,7 +4,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/effa1710-7be2-4d26-b7d0-68337a0cdc16/deploy-status)](https://app.netlify.com/sites/social-fm/deploys)
 
-https://social-fm.netlify.app/
+[Social Proof Section](https://social-fm.netlify.app/)
 
 # Social Card Section - Frontend Mentor Challenge.
 
